@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BMW Motorrad | Make Life a Ride</title>
+<meta name="description" content="Superbikes, adventure and touring motorcycles. Explore the BMW Motorrad range.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800;900&display=swap" rel="stylesheet">
+<!-- Absolute path removed: the stylesheet now sits beside this file -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- SVG sprite: roundel placeholder (not the official BMW asset) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="roundel" viewBox="0 0 100 100">
+    <circle cx="50" cy="50" r="48" fill="#111" stroke="#fff" stroke-width="3"/>
+    <path d="M50 14a36 36 0 0 1 36 36H50z" fill="#fff"/>
+    <path d="M14 50a36 36 0 0 1 36-36v36z" fill="#1c69d4"/>
+    <path d="M50 86A36 36 0 0 1 14 50h36z" fill="#fff"/>
+    <path d="M86 50a36 36 0 0 1-36 36V50z" fill="#1c69d4"/>
+    <circle cx="50" cy="50" r="36" fill="none" stroke="#fff" stroke-width="1"/>
+  </symbol>
+  <symbol id="i-engine" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" d="M3 9h3l2-3h6l2 3h4v8h-3l-2 2H8l-2-2H3zM9 12h6"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" d="M12 3l8 3v6c0 5-3.5 8-8 9-4.500-1-8-4-8-9V6zM8.500 12l2.500 2.500 4.500-5"/></symbol>
+  <symbol id="i-susp" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" d="M8 3h8M12 3v4M9 7c-2 1 2 2 0 3s2 2 0 3 2 2 0 3h6c-2-1 2-2 0-3s2-2 0-3 2-2 0-3zM12 16v5"/></symbol>
+  <symbol id="i-screen" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" d="M3 5h18v11H3zM8 20h8M12 16v4M7 12l3-3 3 2 4-4"/></symbol>
+  <symbol id="i-bolt" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" d="M13 2L5 14h6l-1 8 8-12h-6z"/></symbol>
+  <symbol id="i-gear" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" d="M12 8a4 4 0 100 8 4 4 0 000-8zM12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></symbol>
+</svg>
+
+<!-- 1. NAVIGATION -->
+<header class="nav" id="nav">
+  <a class="brand" href="#home" aria-label="BMW Motorrad home">
+    <svg class="roundel" aria-hidden="true"><use href="#roundel"/></svg>
+    <span>BMW <b>Motorrad</b></span>
+  </a>
+  <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  <nav class="menu" id="menu" aria-label="Main">
+    <a href="#home">Home</a>
+    <a href="#motorcycles">Motorcycles</a>
+    <a href="#models">Models</a>
+    <a href="#technology">Technology</a>
+    <a href="#about">About Us</a>
+    <a href="#contact" class="nav-cta">Contact</a>
+  </nav>
+</header>
+
+<main>
+<!-- 2. HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg parallax" data-speed="0.3"></div>
+  <div class="hero-inner">
+    <p class="kicker">BMW Motorrad</p>
+    <h1><span class="line">Make life</span><span class="line">a ride.</span></h1>
+    <p class="lead">Superbikes, adventure machines and tourers, engineered in Munich for the road ahead.</p>
+    <div class="btns">
+      <a href="#motorcycles" class="btn btn-fill">Explore Models</a>
+      <a href="#about" class="btn btn-ghost">Discover More</a>
+    </div>
+  </div>
+  <a href="#motorcycles" class="scroll-cue" aria-label="Scroll down"></a>
+</section>
+
+<!-- 3. FEATURED MOTORCYCLES -->
+<section class="section" id="motorcycles">
+  <div class="wrap">
+    <div class="head reveal"><h2>Featured motorcycles</h2><p>Three bikes, three kinds of freedom.</p></div>
+    <div class="grid cards">
+      <article class="card reveal">
+        <div class="card-img img-s1000"></div>
+        <div class="card-body">
+          <h3>S 1000 RR</h3><p class="tag">Superbike</p>
+          <dl><div><dt>Engine</dt><dd>999 cc</dd></div><div><dt>Top speed</dt><dd>299+ km/h</dd></div><div><dt>From</dt><dd>₹21.00 lakh*</dd></div></dl>
+          <a href="#models" class="btn btn-line">View Details</a>
+        </div>
+      </article>
+      <article class="card reveal">
+        <div class="card-img img-gs"></div>
+        <div class="card-body">
+          <h3>R 1300 GS</h3><p class="tag">Adventure</p>
+          <dl><div><dt>Engine</dt><dd>1,300 cc</dd></div><div><dt>Top speed</dt><dd>200+ km/h</dd></div><div><dt>From</dt><dd>₹21.95 lakh*</dd></div></dl>
+          <a href="#models" class="btn btn-line">View Details</a>
+        </div>
+      </article>
+      <article class="card reveal">
+        <div class="card-img img-k"></div>
+        <div class="card-body">
+          <h3>K 1600 GT</h3><p class="tag">Touring</p>
+          <dl><div><dt>Engine</dt><dd>1,649 cc</dd></div><div><dt>Top speed</dt><dd>200+ km/h</dd></div><div><dt>From</dt><dd>₹27.00 lakh*</dd></div></dl>
+          <a href="#models" class="btn btn-line">View Details</a>
+        </div>
+      </article>
+    </div>
+    <p class="note">*Placeholder figures. Check bmw-motorrad.in for current specifications and pricing.</p>
+  </div>
+</section>
+
+<!-- 4. M PERFORMANCE -->
+<section class="section m-sec" id="models">
+  <div class="m-bg parallax" data-speed="0.15"></div>
+  <div class="wrap m-grid">
+    <div class="reveal">
+      <div class="m-stripe" aria-hidden="true"><i></i><i></i><i></i></div>
+      <h2 class="m-title">Built for the <span>track.</span></h2>
+      <p>The M Competition package brings carbon wheels, an M Endurance chain and lightweight parts to the S 1000 RR, tuned for lap time rather than comfort.</p>
+      <a href="#contact" class="btn btn-fill">Book a test ride</a>
+    </div>
+    <ul class="m-list reveal">
+      <li><strong data-count="209">0</strong><span>hp, peak power</span></li>
+      <li><strong data-count="197">0</strong><span>kg, ready to ride</span></li>
+      <li><strong data-count="3">0</strong><span>riding modes for the track</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- 5. TECHNOLOGY -->
+<section class="section" id="technology">
+  <div class="wrap">
+    <div class="head reveal"><h2>Technology you can feel</h2><p>Every system is tuned to the way you ride.</p></div>
+    <div class="grid tech">
+      <div class="tcard reveal"><svg><use href="#i-engine"/></svg><h3>Boxer and inline engines</h3><p>Smooth torque low down and strong power up high.</p></div>
+      <div class="tcard reveal"><svg><use href="#i-shield"/></svg><h3>Rider safety</h3><p>Cornering ABS, traction control and optional radar-assisted cruise.</p></div>
+      <div class="tcard reveal"><svg><use href="#i-susp"/></svg><h3>Dynamic suspension</h3><p>Electronic damping adapts to the road and your load.</p></div>
+      <div class="tcard reveal"><svg><use href="#i-screen"/></svg><h3>Connected display</h3><p>Navigation, calls and ride data on a TFT screen.</p></div>
+      <div class="tcard reveal"><svg><use href="#i-bolt"/></svg><h3>Ride modes</h3><p>Switch between Rain, Road, Dynamic and Race in one tap.</p></div>
+      <div class="tcard reveal"><svg><use href="#i-gear"/></svg><h3>Shift assistant</h3><p>Clutchless up and down shifts at speed.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 6. ABOUT -->
+<section class="section about" id="about">
+  <div class="wrap about-grid">
+    <div class="about-img reveal" role="img" aria-label="BMW motorcycle in motion"></div>
+    <div class="reveal">
+      <h2>A century of motorcycles</h2>
+      <p>BMW built its first motorcycle engine in 1920 and its first complete motorcycle, the R 32, in 1923. The boxer layout it introduced is still part of the range today.</p>
+      <div class="stats">
+        <div><strong data-count="100" data-suffix="+">0</strong><span>years of motorcycles</span></div>
+        <div><strong data-count="1923">0</strong><span>year of the R 32</span></div>
+        <div><strong data-count="50" data-suffix="+">0</strong><span>countries</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. GALLERY -->
+<section class="section" id="gallery">
+  <div class="wrap">
+    <div class="head reveal"><h2>Gallery</h2><p>Hover to look closer, click to enlarge.</p></div>
+    <div class="gallery">
+      <button class="g g1 reveal" data-title="Superbike"><span>Superbike</span></button>
+      <button class="g g2 reveal" data-title="Adventure"><span>Adventure</span></button>
+      <button class="g g3 reveal" data-title="Touring"><span>Touring</span></button>
+      <button class="g g4 reveal" data-title="Roadster"><span>Roadster</span></button>
+      <button class="g g5 reveal" data-title="Track day"><span>Track day</span></button>
+    </div>
+  </div>
+</section>
+
+<!-- 8. CALL TO ACTION -->
+<section class="cta">
+  <div class="wrap reveal">
+    <h2>Find your next ride</h2>
+    <p>Book a test ride at your nearest BMW Motorrad dealer.</p>
+    <a href="#contact" class="btn btn-fill">Book a test ride</a>
+  </div>
+</section>
+</main>
+
+<!-- 9. FOOTER -->
+<footer class="footer" id="contact">
+  <div class="wrap foot-grid">
+    <div>
+      <a class="brand" href="#home"><svg class="roundel" aria-hidden="true"><use href="#roundel"/></svg><span>BMW <b>Motorrad</b></span></a>
+      <p class="small">Fan-made demo site. Not affiliated with BMW AG. The roundel shown is a placeholder.</p>
+    </div>
+    <div>
+      <h4>Quick links</h4>
+      <a href="#motorcycles">Motorcycles</a><a href="#models">Models</a><a href="#technology">Technology</a><a href="#about">About Us</a>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <a href="tel:+911234567890">+91 12345 67890</a>
+      <a href="mailto:hello@example.com">hello@example.com</a>
+      <span>Hyderabad, Telangana</span>
+    </div>
+    <div>
+      <h4>Follow</h4>
+      <div class="social">
+        <a href="https://www.instagram.com/bmwmotorrad" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="17.500" cy="6.500" r="1.200" fill="currentColor"/></svg></a>
+        <a href="https://www.youtube.com/@bmwmotorrad" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="4" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M10 9l5 3-5 3z" fill="currentColor"/></svg></a>
+        <a href="https://www.facebook.com/BMWMotorrad" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 8h3V4h-3a4 4 0 00-4 4v2H7v4h3v6h4v-6h3l1-4h-4V8z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></a>
+      </div>
+    </div>
+  </div>
+  <p class="copy">&copy; <span id="year">2026</span> Bike showcase demo. BMW and the BMW roundel are trademarks of BMW AG.</p>
+</footer>
+
+<!-- Gallery lightbox -->
+<div class="lightbox" id="lightbox" hidden><button aria-label="Close">&times;</button><div id="lb-img"></div><p id="lb-cap"></p></div>
+
+<script src="script.js"></script>
+</body>
+</html>
